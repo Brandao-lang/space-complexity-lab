@@ -219,8 +219,7 @@ function countLettersRoundTwo(str) {
 
 
 // Q: Explain how you came to your conclusions about the space complexity of each function. 
-// ANSWER: 
-
+// ANSWER: Becasue both functions work in a linear fashion, just depends how big the string and how many letters end up being count
 
 // 12) Memoization
 /*
@@ -303,10 +302,6 @@ class Factorial {
 
 const myFac = new Factorial()
 
-myFac.calcFac(6)
-
-
-
 console.time("not memoized function time");
 console.log("not memoized function");
 console.log(calcFac(8));
@@ -371,10 +366,10 @@ function countingString(str) {
 
 /*
     Before you see how much time they take, make a 
-    guess as to if one will be faster.
+    guess as to if one will be faster. 
 */
 
-// ANSWER: 
+// ANSWER: The memoize one will be faster depending on if what we are passing in has been used before and stored in the cache.
 
 // Now fill this out and run your file
 
@@ -382,9 +377,6 @@ function countingString(str) {
 
 
 const myString = new stringCounter()
-myString.countString("test")
-
-
 
 console.time("not memoized function time");
 console.log("not memoized function");
@@ -396,8 +388,8 @@ console.timeEnd("not memoized function time");
 
 console.log("memoized function");
 console.time("memoized function time");
-console.log(// CALL THE METHOD FROM YOUR CLASS)
-console.log(// CALL THE METHOD FROM YOUR CLASS)
-console.log(// CALL THE METHOD FROM YOUR CLASS)
-console.log(// CALL THE METHOD FROM YOUR CLASS)
+console.log(myString.countString("test"))
+console.log(myString.countString("test"))
+console.log(myString.countString("test"))
+console.log(myString.countString("test"))
 console.timeEnd("memoized function time");
