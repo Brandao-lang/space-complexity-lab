@@ -219,7 +219,7 @@ function countLettersRoundTwo(str) {
 
 
 // Q: Explain how you came to your conclusions about the space complexity of each function. 
-// ANSWER: Becasue both functions work in a linear fashion, just depends how big the string and how many letters end up being count
+// ANSWER: Becasue both functions work in a linear fashion, just depends how big the string and how many letters end up being counted
 
 // 12) Memoization
 /*
